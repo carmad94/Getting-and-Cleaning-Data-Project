@@ -43,3 +43,5 @@ activity_mean[1] <- activity_labels$V2
 #export the tidy data set
 write.csv(activity_mean, file = "activity_mean.csv",row.names=FALSE, na="")
 write.csv(subject_mean, file = "subject_mean.csv",row.names=FALSE, na="")
+write.table(activity_mean, file = "activity_mean.txt",row.names=FALSE, na="")
+write.table(subject_mean, file = "subject_mean.txt",row.names=FALSE, na="")
